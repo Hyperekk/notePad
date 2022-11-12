@@ -1,4 +1,4 @@
-package com.bartt.windowswindows;
+package com.bartt.notePad;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;

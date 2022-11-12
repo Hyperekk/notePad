@@ -4,6 +4,6 @@ module com.bartt.windowswindows {
 
     requires org.controlsfx.controls;
 
-    opens com.bartt.windowswindows to javafx.fxml;
-    exports com.bartt.windowswindows;
+    opens com.bartt.notePad to javafx.fxml;
+    exports com.bartt.notePad;
 }
