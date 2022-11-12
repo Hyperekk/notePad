@@ -8,6 +8,7 @@ import javafx.scene.control.TextField;
 
 import java.time.LocalDate;
 import java.time.LocalTime;
+import java.util.List;
 
 public class HelloController {
     public TextArea txt2;
@@ -20,12 +21,14 @@ public class HelloController {
         welcomeText.setText("Welcome to JavaFX Application!");
     }
 
-    public void menuOption1Clck(ActionEvent actionEvent) {
+    public void menuOption1Clck(ActionEvent actionEvent)
+    {
+
     }
 
     public void menuOption1_1Clck(ActionEvent actionEvent)
     {
-
+        
     }
 
     public void menuOption1_2Clck(ActionEvent actionEvent)
