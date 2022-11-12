@@ -1,16 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
 
-<?import javafx.scene.control.Button?>
-<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
-      fx:controller="com.bartt.notePad.HelloController">
-    <padding>
-        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
-    </padding>
-
-    <Label fx:id="welcomeText"/>
-    <Button text="Hello!" onAction="#onHelloButtonClick"/>
-</VBox>
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.bartt.notePad.HelloController">
+   <children>
+      <MenuBar layoutY="2.0" prefHeight="25.0" prefWidth="600.0">
+        <menus>
+          <Menu mnemonicParsing="false" onAction="#menuOption1Clck" text="Plik">
+            <items>
+                  <MenuItem mnemonicParsing="false" onAction="#menuOption1_1Clck" text="Otórz plik" />
+              <MenuItem mnemonicParsing="false" onAction="#menuOption1_2Clck" text="Zapisz" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" onAction="#menuOption2Clck" text="Edycja">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#menuOption2_1Clck" text="Duże litery" />
+                  <MenuItem mnemonicParsing="false" onAction="#menuOption2_2Clck" text="Małe litery" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" onAction="#menuOption3Clck" text="Wstawienie">
+            <items>
+                  <MenuItem mnemonicParsing="false" onAction="#menuOption3_1Clck" text="Wstaw aktualną godznę" />
+                  <MenuItem mnemonicParsing="false" onAction="#menuOption3_2Clck" text="Wstaw aktualną datę" />
+                  <MenuItem mnemonicParsing="false" onAction="#menuOption3_3Clck" text="Wstaw datę..." />
+              <MenuItem mnemonicParsing="false" onAction="#menuOption3_4Clck" text="Generuj hasło" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <TextArea fx:id="txt2" layoutY="56.0" prefHeight="345.0" prefWidth="600.0" />
+      <TextField fx:id="txt1" layoutX="74.0" layoutY="27.0" />
+      <Label layoutX="4.0" layoutY="31.0" text="URL do pliku:" />
+   </children>
+</Pane>
